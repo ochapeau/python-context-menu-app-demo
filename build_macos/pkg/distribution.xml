@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-script minSpecVersion="1">
+    <title>My Application Installer</title>
+    <options customize="none" allow-external-scripts="no"/>
+    <choices-outline>
+        <line choice="choice1"/>
+        <line choice="choice2"/>
+    </choices-outline>
+    <choice id="choice1" visible="true">
+        <pkg-ref id="dev.ochapeau.resizeimagesappdemo"/>
+    </choice>
+    <choice id="choice2" visible="true">
+        <pkg-ref id="dev.ochapeau.resizeimagesworkflowdemo"/>
+    </choice>
+    <pkg-ref id="dev.ochapeau.resizeimagesappdemo" version="1.0" onConclusion="none">ResizeImagesAppDemo.pkg</pkg-ref>
+    <pkg-ref id="dev.ochapeau.resizeimagesworkflowdemo" version="1.0" onConclusion="none">ResizeImagesWorkFlowDemo.pkg</pkg-ref>
+</installer-script>
